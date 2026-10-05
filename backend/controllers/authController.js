@@ -3,10 +3,10 @@
 import bcrypt from 'bcryptjs'; // use bcryptjs
 
 import mongoose from 'mongoose';
-import User from '../../../TaskAssignmentProductionTest/backend/models/User.js';
+import User from '../models/User.js';
 
 import jwt from 'jsonwebtoken';
-import Notification from '../../../TaskAssignmentProductionTest/backend/models/Notification.js';
+import Notification from '../models/Notification.js';
 import crypto from 'crypto';
 import transporter from '../../../TaskAssignmentProductionTest/backend/config/mailer.js';
 

@@ -1,9 +1,9 @@
 // controllers/adminController.js
 
 import bcrypt from 'bcryptjs';
-import User from '../../../TaskAssignmentProductionTest/backend/models/User.js';
-import Client from '../../../TaskAssignmentProductionTest/backend/models/Client.js';
-import Task from '../../../TaskAssignmentProductionTest/backend/models/Task.js';
+import User from '../models/User.js';
+import Client from '../models/Client.js';
+import Task from '../models/Task.js';
 
 export const registerEmployee = async (req, res) => {
   try {

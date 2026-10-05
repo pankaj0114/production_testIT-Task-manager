@@ -1,4 +1,4 @@
-import User from '../../../TaskAssignmentProductionTest/backend/models/User.js';
+import User from '../models/User.js';
 import bcrypt from 'bcrypt';
 
 // Get all users

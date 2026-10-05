@@ -1,7 +1,7 @@
-import Attendance from '../../../TaskAssignmentProductionTest/backend/models/Attendance.js';
-import LeaveRequest from '../../../TaskAssignmentProductionTest/backend/models/LeaveRequest.js';
-import WfhRequest from '../../../TaskAssignmentProductionTest/backend/models/WfhRequest.js';
-import User from '../../../TaskAssignmentProductionTest/backend/models/User.js';
+import Attendance from '../models/Attendance.js';
+import LeaveRequest from '../models/LeaveRequest.js';
+import WfhRequest from '../models/WfhRequest.js';
+import User from '../models/User.js';
 
 const VALID_STATUSES = ['WFO', 'WFH'];
 

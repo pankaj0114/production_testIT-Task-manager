@@ -1,4 +1,4 @@
-import Task from '../../../TaskAssignmentProductionTest/backend/models/Task.js';
+import Task from '../models/Task.js';
 import { createTaskChangeNotification } from './taskNotificationHelper.js';
 
 const canUpdateTask = (task, userId) => {

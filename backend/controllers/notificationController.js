@@ -1,4 +1,4 @@
-import Notification from '../../../TaskAssignmentProductionTest/backend/models/Notification.js';
+import Notification from '../models/Notification.js';
 
 // ==========================================
 // GET MY NOTIFICATIONS
