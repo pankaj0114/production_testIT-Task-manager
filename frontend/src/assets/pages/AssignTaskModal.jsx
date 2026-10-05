@@ -21,9 +21,7 @@ const AssignTaskModal = ({ onClose }) => {
   useEffect(() => {
     const fetchEmployees = async () => {
       try {
-        const res = await axios.get(
-          'http://localhost:5005/api/users/employees',
-        );
+        const res = await axios.get(`${API_BASE}/api/users/employees`);
         setEmployees(res.data);
       } catch (error) {
         console.error('Error fetching employees:', error);
@@ -50,7 +48,7 @@ const AssignTaskModal = ({ onClose }) => {
       console.log('Assigning task:', payload);
 
       const response = await axios.post(
-        'http://localhost:5005/api/tasks/assign',
+        `${API_BASE}/api/tasks/assign`,
         payload,
         {
           headers: {
