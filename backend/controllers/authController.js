@@ -8,7 +8,7 @@ import User from '../models/User.js';
 import jwt from 'jsonwebtoken';
 import Notification from '../models/Notification.js';
 import crypto from 'crypto';
-import transporter from '../../../TaskAssignmentProductionTest/backend/config/mailer.js';
+import transporter from '../config/mailer.js';
 
 // Register new user
 
