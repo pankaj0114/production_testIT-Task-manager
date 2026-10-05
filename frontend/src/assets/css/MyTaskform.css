@@ -1,0 +1,47 @@
+.task-form {
+  display: flex;
+  flex-wrap: wrap; /* allow wrapping if screen is small */
+  gap: 1rem; /* spacing between fields */
+  margin-bottom: 1.5rem;
+}
+
+.task-form .form-group {
+  flex: 1; /* each field takes equal width */
+  min-width: 180px; /* prevent fields from shrinking too much */
+  display: flex;
+  flex-direction: column;
+}
+
+.task-form label {
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+  color: #444;
+}
+
+.task-form input,
+.task-form textarea,
+.task-form select {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.task-form input:focus,
+.task-form textarea:focus,
+.task-form select:focus {
+  border-color: #0078d7;
+  box-shadow: 0 0 0 2px rgba(0, 120, 215, 0.2);
+  outline: none;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1rem;
+  width: 100%; /* actions span full row */
+}
