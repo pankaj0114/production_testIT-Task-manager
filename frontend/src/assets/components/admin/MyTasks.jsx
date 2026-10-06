@@ -2,7 +2,9 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import axios from 'axios';
 //import '../css/MyTaskform.css';
 
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5005';
+const API_BASE = (
+  import.meta.env.VITE_API_URL || 'http://localhost:5005'
+).replace(/\/+$/, '');
 
 const getTodayDate = () => {
   const d = new Date();

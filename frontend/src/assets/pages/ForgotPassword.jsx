@@ -3,7 +3,9 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { Mail, ShieldCheck, Lock, Eye, EyeOff, ArrowLeft } from 'lucide-react';
 
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5005';
+const API_BASE = (
+  import.meta.env.VITE_API_URL || 'http://localhost:5005'
+).replace(/\/+$/, '');
 
 export default function ForgotPassword() {
   const navigate = useNavigate();

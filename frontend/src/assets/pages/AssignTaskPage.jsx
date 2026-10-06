@@ -3,7 +3,9 @@ import axios from 'axios';
 import '../css/AssignTaskPage.css';
 //import { useEffect, use } from 'react';
 
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5005';
+const API_BASE = (
+  import.meta.env.VITE_API_URL || 'http://localhost:5005'
+).replace(/\/+$/, '');
 
 const AssignTaskPage = ({ employees, onTaskCreated }) => {
   const [showSuccessPopup, setShowSuccessPopup] = useState(false);

@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../css/AssignTaskModal.css';
 
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5005';
+const API_BASE = (
+  import.meta.env.VITE_API_URL || 'http://localhost:5005'
+).replace(/\/+$/, '');
 
 const AssignTaskModal = ({ onClose }) => {
   const [form, setForm] = useState({

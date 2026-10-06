@@ -11,7 +11,9 @@ import AdminAttendance from '../components/admin/AdminAttendance';
 import { io } from 'socket.io-client';
 import { MdCalendarMonth } from 'react-icons/md';
 
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5005';
+const API_BASE = (
+  import.meta.env.VITE_API_URL || 'http://localhost:5005'
+).replace(/\/+$/, '');
 
 const AdminDashboard = () => {
   const navigate = useNavigate();
