@@ -1,7 +1,7 @@
 services:
   - type: web
-    name: your-frontend
     runtime: static
+    name: production-testit-task-manager-6
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist
     routes:
