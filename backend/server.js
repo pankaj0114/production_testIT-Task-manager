@@ -28,10 +28,7 @@ const app = express();
 // CORS
 // ========================================
 
-const allowedOrigins = [
-  'http://localhost:5174',
-  'https://task-assignd-system.netlify.app',
-];
+const allowedOrigins = ['http://localhost:5174'];
 
 app.use(
   cors({
