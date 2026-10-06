@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 //import Signup from './assets/pages/Signup';
 import Login from './assets/pages/Login';
 import HRDashboard from './assets/pages/HRDashboard';
@@ -13,7 +13,7 @@ import ForgotPassword from './assets/pages/ForgotPassword';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/hr-dashboard" element={<HRDashboard />} />
@@ -35,7 +35,7 @@ function App() {
           element={<CompletedAssignedTasks />}
         />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 export default App;
