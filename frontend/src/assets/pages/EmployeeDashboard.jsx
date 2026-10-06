@@ -565,7 +565,7 @@ export default function EmployeeDashboard() {
   const fetchTasks = async () => {
     try {
       const token = localStorage.getItem('accessToken');
-      const res = await axios.get(`/api/tasks/my-tasks`, {
+      const res = await axios.get(`${API_BASE}/api/tasks/my-tasks`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setTasks(res.data);
