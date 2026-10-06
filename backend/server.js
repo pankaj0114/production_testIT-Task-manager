@@ -29,21 +29,20 @@ const server = http.createServer(app);
 
 const PORT = process.env.PORT || 5005;
 
+// ========================================
+// CORS
+// ========================================
+
 const allowedOrigins = [
   'http://localhost:5174',
+  'https://production-testit-task-manager-6.onrender.com',
   process.env.FRONTEND_URL,
 ].filter(Boolean);
 
 console.log('Allowed CORS origins:', allowedOrigins);
 
-// ========================================
-// CORS
-// ========================================
-
 const corsOptions = {
   origin: function (origin, callback) {
-    // Allow requests without Origin
-    // Example: Postman, server-to-server requests
     if (!origin) {
       return callback(null, true);
     }
@@ -65,9 +64,6 @@ const corsOptions = {
 };
 
 app.use(cors(corsOptions));
-
-// ❌ DO NOT USE:
-// app.options('*', cors());
 
 // ========================================
 // BODY PARSER
